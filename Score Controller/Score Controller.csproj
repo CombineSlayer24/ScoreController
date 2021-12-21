@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>G:\Steam\steamapps\common\Grand Theft Auto V\scripts\</OutputPath>
+    <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\scripts</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>G:\Steam\steamapps\common\Grand Theft Auto V\scripts\</OutputPath>
+    <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\scripts</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -36,7 +36,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ExternalDLCPack|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>G:\Steam\steamapps\common\Grand Theft Auto V\scripts\</OutputPath>
+    <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\scripts</OutputPath>
     <DefineConstants>TRACE;DEBUG;DLCPACK</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>

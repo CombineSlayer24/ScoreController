@@ -4,10 +4,7 @@ namespace Score_Controller
 {
     public class Tracks
     {
-        public static ScoreTrack Casino_Heist_One = new ScoreTrack(Collections.CasinoHeist, "casino_heist_1", "Casino Heist One", "SC_CASINO_HEIST_1_START", 8);
         public static ScoreTrack Casino_Heist_Two = new ScoreTrack(Collections.CasinoHeist, "casino_heist_2", "Casino Heist Two", "MP_CHF_START", 8);
-        public static ScoreTrack Casino_Heist_Four = new ScoreTrack(Collections.CasinoHeist, "casino_heist_4", "Casino Heist Four", "RC_GUNRUNNING_1", 8);
-        public static ScoreTrack Casino_Heist_Eight = new ScoreTrack(Collections.CasinoHeist, "casino_heist_8", "Casino Heist Eight", "RC_GUNRUNNING_1", 8);
         
         public static ScoreTrack Gunrunning_CS_One = new ScoreTrack(Collections.Gunrunning, "gunrunning_track_cs1", "Gunrunning Track CS One", "RC_GUNRUNNING_1", 6);
         public static ScoreTrack Gunrunning_CS_Five = new ScoreTrack(Collections.Gunrunning, "gunrunning_track_cs5", "Gunrunning Track CS Five", "RC_GUNRUNNING_2", 8);
@@ -87,16 +84,28 @@ namespace Score_Controller
         public static ScoreTrack ArenaWar_Seven = new ScoreTrack(Collections.ArenaWar, "dlc_aw_track_7", "AW Track Seven", "MC_AW_MUSIC_7", 5);
         public static ScoreTrack ArenaWar_Eight = new ScoreTrack(Collections.ArenaWar, "dlc_aw_track_8", "AW Track Eight", "MC_AW_MUSIC_8", 5);
 
-        public static ScoreTrack Sapstick = new ScoreTrack(Collections.WoodyJackson, "wdy_sapstick", "Sapstick", "MIC2_START", 7);
+        public static ScoreTrack Sapstick = new ScoreTrack(Collections.StoryMode, "wdy_sapstick", "Sapstick", "MIC2_START", 7);
+        public static ScoreTrack North_Yankton = new ScoreTrack(Collections.StoryMode, "td_vacuum", "North Yankton Memories", "MIC3_MISSION_START", 8);
+        public static ScoreTrack North_Yankton_Lower = new ScoreTrack(Collections.StoryMode, "td_vacuum", "North Yanton Memories (low)", "OJDA4_START", 8);
+        //public static ScoreTrack No_Happy_Ending = new ScoreTrack(Collections.StoryMode, "td_burning_bar", "No Happy Endings", "MIC1_SHOOTOUT_START", 8);
+        public static ScoreTrack No_Happy_Ending = new ScoreTrack(Collections.StoryMode, "td_burning_bar", "No Happy Endings", "SOL1_FIGHT_RT", 8);
+        public static ScoreTrack No_Happy_Ending_Low = new ScoreTrack(Collections.StoryMode, "td_burning_bar", "No Happy Endings (low)", "SOL1_BEGIN", 8);
+        public static ScoreTrack Scrap_Yard = new ScoreTrack(Collections.StoryMode, "td_scrap_yard", "Scrap Yard", "PAP1_START", 8);
+        public static ScoreTrack Vodka = new ScoreTrack(Collections.StoryMode, "alc_vodka", "Legit Business Man", "FRA2_START", 8);
+        public static ScoreTrack The_Grip = new ScoreTrack(Collections.StoryMode, "alc_gun_novel", "Gun Novel", "FRA1_MISSION_START", 8);
+        public static ScoreTrack Mission_Seven = new ScoreTrack(Collections.StoryMode, "wdy_mission_seven", "Impotent Rage", "TRV2_MISSION_START", 8);
+        public static ScoreTrack Dragoner = new ScoreTrack(Collections.StoryMode, "td_dragoner", "The Dragoner", "TRV4_START", 8);
+        public static ScoreTrack Love_Egss = new ScoreTrack(Collections.StoryMode, "ba_metz_love_egss", "Metz Love Egss", "RE6_START", 8);
+        public static ScoreTrack Minor_Turbulance = new ScoreTrack(Collections.StoryMode, "wdy_crocodile_tears", "Minor Turbulance", "OJDA5_START", 8);
+        public static ScoreTrack SoF = new ScoreTrack(Collections.StoryMode, "td_streets_of_fortune", "Streets of Fortune", "OJDA2_START", 8);
+        public static ScoreTrack Dark_Rob = new ScoreTrack(Collections.StoryMode, "td_dark_robbery", "Dark Robbery", "OJDA1_START", 8);
 
         public static ScoreTrack Heist = new ScoreTrack(Collections.ArsenyTomilov, "ts_heist", "Heist", "TS_HEIST_START", 8);
         public static ScoreTrack BTP = new ScoreTrack(Collections.ArsenyTomilov, "ts_btp", "BTP", "TS_BTP_START", 8);
 
         public static List<ScoreTrack> TrackList = new List<ScoreTrack>()
-        {   Casino_Heist_One,
+        {   
             Casino_Heist_Two,
-            Casino_Heist_Four,
-            Casino_Heist_Eight,
 
             Gunrunning_CS_One,
             Gunrunning_CS_Five,
@@ -176,7 +185,20 @@ namespace Score_Controller
             ArenaWar_Seven,
             ArenaWar_Eight,
 
-            Sapstick
+            Sapstick,
+            North_Yankton,
+            North_Yankton_Lower,
+            No_Happy_Ending,
+            No_Happy_Ending_Low,
+            Scrap_Yard,
+            Vodka,
+            The_Grip,
+            Dragoner,
+            Love_Egss,
+            Minor_Turbulance,
+            SoF,
+            Dark_Rob,
+            Mission_Seven
 
             // Heist, #BETA
             // BTP #BETA
@@ -222,9 +244,9 @@ namespace Score_Controller
                 {
                     listBiker.Add(track.Title);
                 }
-                if (track.Collection == Collections.WoodyJackson)
+                if (track.Collection == Collections.StoryMode)
                 {
-                    listWoodyJackson.Add(track.Title);
+                    listStoryMode.Add(track.Title);
                 }
                 /*if (track.Collection == Collections.ArsenyTomilov) // #BETA
                 {
@@ -247,7 +269,7 @@ namespace Score_Controller
         public static List<object> listGunrunning = new List<object>();
         public static List<object> listArenaWar = new List<object>();
         public static List<object> listBiker = new List<object>();
-        public static List<object> listWoodyJackson = new List<object>();
+        public static List<object> listStoryMode = new List<object>();
         // public static List<object> listArsenyTomilov = new List<object>(); #BETA
 
         public static List<List<object>> scoreLists = new List<List<object>>
@@ -261,7 +283,7 @@ namespace Score_Controller
             listGunrunning,
             listArenaWar,
             listBiker,
-            listWoodyJackson,
+            listStoryMode,
             // listArsenyTomilov #BETA
         };
 
